@@ -11,8 +11,8 @@ st.set_page_config(
 )
 
 # --- API URLs ---
-ANALYZE_URL = "http://127.0.0.1:5000/analyze"
-GENERATE_URL = "http://127.0.0.1:5000/generate"
+ANALYZE_URL = "https://reverse-prompt-engineering.onrender.com/analyze"
+GENERATE_URL = "https://reverse-prompt-engineering.onrender.com/generate"
 
 # --- Initialize Session State ---
 if "analysis_results" not in st.session_state:
