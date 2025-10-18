@@ -1,0 +1,16 @@
+# Core NLP and Logic
+spacy
+textstat
+openai
+python-dotenv
+
+# Backend
+flask
+flask-cors
+
+# Frontend
+streamlit
+requests
+
+scikit-learn
+joblib
