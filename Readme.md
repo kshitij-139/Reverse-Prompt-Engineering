@@ -45,26 +45,25 @@ The user's prompt is sent to the Flask API, which uses the `prompt_classifier.pk
 
 ##📂 Project Structure
 
-```bash
+
 Reverse-Prompt-Engineering/
 │
-├── .env                     # Stores the OPENAI_API_KEY (ignored by .gitignore)
-├── .gitignore               # Ignore venv, .env, __pycache__, etc.
-├── requirements.txt         # Python dependencies
-├── NLP_Prompt.csv           # Labeled dataset used for training
-├── README.md                # This file
+├── .env                 
+├── .gitignore          
+├── requirements.txt     
+├── README.md            
+├── Model_Training.ipynb 
 │
 ├── backend/
-│   ├── __init__.py          # Marks backend as a Python module
-│   ├── app.py               # Flask API server (routing)
-│   ├── prompt_analyzer.py   # Core logic, model loading, and API calls
-│   └── prompt_classifier.pkl# Trained scikit-learn model
+│   ├── __init__.py      
+│   ├── app.py           
+│   ├── prompt_analyzer.py 
+│   └── prompt_classifier.pkl 
 │
 └── frontend/
-    └── app.py               # Streamlit frontend UI
+    └── app.py          
 
 
----
 
 ## 🤖 The Machine Learning Model
 
