@@ -4,7 +4,7 @@ A full-stack web application (Streamlit + Flask) that uses a **custom-trained ma
 
 ---
 
-## 📸 Demo
+## Demo
 
 This workbench provides a clean, 3-column interface for a complete prompt engineering workflow.
 
@@ -70,12 +70,12 @@ Reverse-Prompt-Engineering/
 
 The core of this project is the `prompt_classifier.pkl` file.
 
-* **Model Type:** A `scikit-learn` Pipeline.
-* **Pipeline Steps:**
-    1.  **`TfidfVectorizer`**: Converts the raw prompt text into a numerical matrix.
-    2.  **`MultiOutputClassifier`**: Wraps a `LogisticRegression` classifier, allowing the model to predict multiple labels (problems) for a single prompt.
-* **Training Data:** The model was trained on the `NLP_Prompt.csv` dataset, which contains various prompts hand-labeled with the `is_vague`, `no_action_verb`, and `no_format` tags.
-* **Performance:** The dataset was imbalanced (e.g., many prompts were missing a format, but fewer were missing an action verb). To fix this, the `LogisticRegression` model was trained with `class_weight='balanced'`. This resulted in a high-performance model with an F1-score of **~0.90 (90%)** across all labels.
+Model Type: A `scikit-learn` Pipeline.
+Pipeline Steps:
+    1.  `TfidfVectorizer`: Converts the raw prompt text into a numerical matrix.
+    2.  `MultiOutputClassifier`: Wraps a `LogisticRegression` classifier, allowing the model to predict multiple labels (problems) for a single prompt.
+  Training Data: The model was trained on the `NLP_Prompt.csv` dataset, which contains various prompts hand-labeled with the `is_vague`, `no_action_verb`, and `no_format` tags.
+ Performance: The dataset was imbalanced (e.g., many prompts were missing a format, but fewer were missing an action verb). To fix this, the `LogisticRegression` model was trained with `class_weight='balanced'`. This resulted in a high-performance model with an F1-score of ~0.90 (90%) across all labels.
 
 ---
 
