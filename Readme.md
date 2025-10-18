@@ -48,20 +48,20 @@ The user's prompt is sent to the Flask API, which uses the `prompt_classifier.pk
 
 Reverse-Prompt-Engineering/
 │
-├── .env                 
-├── .gitignore          
-├── requirements.txt     
-├── README.md            
-├── Model_Training.ipynb 
+├── .env
+├── .gitignore
+├── requirements.txt
+├── README.md
+├── Model_Training.ipynb
 │
 ├── backend/
-│   ├── __init__.py      
-│   ├── app.py           
-│   ├── prompt_analyzer.py 
-│   └── prompt_classifier.pkl 
+│ ├── init.py
+│ ├── app.py
+│ ├── prompt_analyzer.py
+│ └── prompt_classifier.pkl
 │
 └── frontend/
-    └── app.py          
+└── app.py
 
 
 
