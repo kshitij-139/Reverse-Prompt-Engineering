@@ -81,12 +81,12 @@ Pipeline Steps:
 
 ##  ⚙️ Tech Stack
 
-* **Frontend:** Streamlit
-* **Backend:** Flask, Flask-CORS
-* **Machine Learning:** Scikit-learn, Pandas, Joblib
-* **Core NLP:** spaCy
-* **LLM API:** OpenAI
-* **Deployment (Local):** `flask run` & `streamlit run`
+* Frontend: Streamlit
+* Backend: Flask, Flask-CORS
+* Machine Learning: Scikit-learn, Pandas, Joblib
+* Core NLP: spaCy
+* LLM API: OpenAI
+* Deployment (Local): `flask run` & `streamlit run`
 
 ---
 
@@ -132,19 +132,19 @@ Pipeline Steps:
 
 You need to run two terminals.
 
-* **Terminal 1: Run the Flask Backend**
+ **Terminal 1: Run the Flask Backend**
     ```bash
     # From the root project folder
     flask --app backend/app.py run
     ```
     *(The backend will run on `http://127.0.0.1:5000`)*
 
-* **Terminal 2: Run the Streamlit Frontend**
+ **Terminal 2: Run the Streamlit Frontend**
     ```bash
     # From the root project folder
     streamlit run frontend/app.py
     ```
-    *(Streamlit will automatically open `http://localhost:8501` in your browser)*
+    *(Streamlit will automatically open `http://localhost:8501` in your browser)
 
 ---
 
@@ -153,5 +153,5 @@ You need to run two terminals.
 This project was built by Kshitij Gokhale.
 
 For any questions, feedback, or inquiries, please feel free to reach out:
-* **Email:** `kshitijgokhale134@gmail.com`
-* **LinkedIn:** `https://www.linkedin.com/in/kshitij-gokhale-5132b928a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bn7YHafHyQOiht%2BFEv1%2BNkA%3D%3D`
+Email: `kshitijgokhale134@gmail.com`
+LinkedIn: `https://www.linkedin.com/in/kshitij-gokhale-5132b928a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bn7YHafHyQOiht%2BFEv1%2BNkA%3D%3D`
