@@ -68,6 +68,8 @@ with col1:
                     st.error(f"Connection Error: Could not connect to the backend. Is it running?")
                 except Exception as e:
                     st.error(f"An unexpected error occurred: {e}")
+        st.rerun()
+            
 
 # --- COLUMN 2: HEURISTIC ANALYSIS ---
 with col2:
@@ -102,7 +104,7 @@ with col3:
             value=st.session_state.improved_prompt, 
             height=150,
             key="improved_prompt_display",
-            disabled=True # Can be tweaked as per user's preference
+            disabled=False # Can be tweaked as per user's preference
         )
         
         st.divider()
