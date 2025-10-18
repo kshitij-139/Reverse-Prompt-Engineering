@@ -58,8 +58,11 @@ with col1:
                     results = response.json()
                     
                     st.session_state.analysis_results = results
-                    if use_llm_checkbox:
+
+                    if use_llm_checkbox and "llm_suggestion" in results:
                         st.session_state.improved_prompt = results.get("llm_suggestion", "")
+                    else:
+                        st.session_state.improved_prompt = ""
 
                 except requests.exceptions.RequestException as e:
                     st.error(f"Connection Error: Could not connect to the backend. Is it running?")
@@ -73,7 +76,6 @@ with col2:
     # This column only shows content after analysis is run
     if st.session_state.analysis_results:
         results = st.session_state.analysis_results
-        
         heuristics = results.get("heuristics", {})
         
         st.write(f"**Readability:** `{heuristics.get('readability', 'N/A')}`")
@@ -100,7 +102,7 @@ with col3:
             value=st.session_state.improved_prompt, 
             height=150,
             key="improved_prompt_display",
-            disabled=False # Can be tweaked as per user's preference
+            disabled=True # Can be tweaked as per user's preference
         )
         
         st.divider()
