@@ -84,7 +84,7 @@ with col1:
                     st.error(f"An unexpected error occurred during analysis: {e}")
 
         
-        st.experimental_rerun()
+        st.rerun()
         
 # --- COLUMN 2: HEURISTIC ANALYSIS ---
 with col2:
