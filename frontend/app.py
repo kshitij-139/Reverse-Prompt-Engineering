@@ -84,7 +84,7 @@ with col1:
                     st.error(f"An unexpected error occurred during analysis: {e}")
 
         
-        st.rerun()
+        st.experimental_rerun()
         
 # --- COLUMN 2: HEURISTIC ANALYSIS ---
 with col2:
@@ -139,7 +139,7 @@ with col3:
                 "Suggested Improvement",
                 value=st.session_state.improved_prompt,
                 height=150,
-                key="improved_prompt_display", 
+                # key="improved_prompt_display", 
                 disabled=False 
             )
 
